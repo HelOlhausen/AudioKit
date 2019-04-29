@@ -36,7 +36,7 @@ open class AKMicrophone: AKNode, AKToggleable {
     }
 
     /// Initialize the microphone
-	public init?(with format: AVAudioFormat? = nil)
+	@objc public init?(with format: AVAudioFormat? = nil)
 	{
 		super.init()
 		guard let format = getFormatForDevice()
